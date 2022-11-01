@@ -1,0 +1,56 @@
+/*https://www.youtube.com/watch?v=9Nvq5_0VFLE&list=PLqQ6Lvascx2s9AnpPOy0b-MSZFHUfvNml&index=3*/
+.container {
+    background-color: #affffb;
+    height: 40vh;
+    padding: 20px;
+    position: relative;
+}
+/*position co 5 gia tri chinh: static, relative, absolute, fixed, sticky
+mac dinh cac element trong html co thuoc tinh la static no duoc hien thi 
+theo dong chay thong thuong cua trang (hien thi cac block emlement theo chieu 
+xuong duoi, moi mot block element se chiem het khoang khong gian theo chieu ngang cua container)
+mot so block element pho bien nhu the p, div... nguoc lai block thi ta co cac inline element nhu 
+the a, image,spand cac inline element khong chiem het chieu ngang cua container ma nguoc lai chung
+nam canh nhau tu trai sang phai
+cac thuoc tinh top, left, right, bottom, z-index se khong co gia tri voi mot static element muon dung
+duoc cac gia tri tren ta co the set position: relative cho 1 block cu the*/
+.block {
+    height: 50px;
+}
+
+.block-1 {
+    background-color: #ff5e5e;
+    position: relative;/*dung postion: relative de can chinh vi tri block 1*/
+    top: 20px; /*di chuyen block 1 xuong duoi 20px*/
+    left:100px;/*di chuyen block 1 sang trai 100px*/
+}
+
+.block-2 {
+    background-color: #40c9ff;
+    position: absolute;/*block 2 se loai bo ra khoi dong chay thong thuong cua trang cac bloc con lai di 
+    chuyen len phia tren chiem lay khoang khong gian de lai cua block 2
+    vi tri cua mot absolute element se nam tuong doi voi thuoc tinh cha 
+    gan nhat cua no co thuoc tinh position: relative/absolute/fixed/sticky
+    trong code thuoc tinh cha cua block-2 la container vi vay vi tri cua block
+    2 nam tuong doi theo vi tri cua container, nguoc lai neu khong co thuoc tinh cha
+    nao co position: relative/absolute/fixed/sticky thi no se nam tuong doi theo root element(the html)*/
+    /* top: 100px;block 2 nam cach mep tren cua container la 100px */
+    left:50px;/*block 2 cach mep ben trai container 50px*/
+    bottom: 0; /*vi cha ko co thuoc tinh relative ... nen block 2 se nam sat mep duoi cua html element neu ta them postion:relative 
+    cho container thi block 2 se nam sat mep duoi cua container*/
+}
+
+.block-3 {
+    background-color: #ff814f;
+    /* position: fixed;giong nhu absolute no se bi loai bo khoi dong chay thong thuong cua trang va hien thi tuong doi theo html elemnet */
+    /* bottom: 0;block 3 se nam sat mep duoi cua html element */
+    position: sticky;/*mac dinh no se giong relative, nam theo dong chay thong thuong cua trang neu ta set top:0 va cuon xuong thi luc nay 
+    no se hoat dong giong mot fixed element , luu y no chi hoat dong duoc trong div container truc tiep cua no*/
+    top: 0;
+
+}
+
+section {
+    background-color: green;
+    height: 100vh;
+}

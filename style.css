@@ -27,7 +27,7 @@ duoc cac gia tri tren ta co the set position: relative cho 1 block cu the*/
 
 .block-2 {
     background-color: #40c9ff;
-    position: absolute;/*block 2 se loai bo ra khoi dong chay thong thuong cua trang cac bloc con lai di 
+    position: absolute;/*block 2 se loai bo ra khoi dong chay thong thuong cua trang cac block con lai di 
     chuyen len phia tren chiem lay khoang khong gian de lai cua block 2
     vi tri cua mot absolute element se nam tuong doi voi thuoc tinh cha 
     gan nhat cua no co thuoc tinh position: relative/absolute/fixed/sticky
